@@ -20,12 +20,12 @@ export interface Bento {
 
 // 本公司員工
 export interface User {
-  userId: number,
-  nogleId: string, // 看有無需要
-  email: string,
-  nickName: string,
+  userId: string, // 為了跟google id 相同type
+  nogleId?: string, // 看有無需要
+  email?: string,
+  nickName?: string,
   walletAddress?: string, // 錢包地址
-  acceptPayMethod: PayMethod[], // 預設 cash, 當發起者的時候, 可以接受別人用啥付款
+  acceptPayMethod?: PayMethod[], // 預設 cash, 當發起者的時候, 可以接受別人用啥付款
   linePayId?: string,
 }
 
