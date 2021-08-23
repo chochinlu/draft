@@ -20,10 +20,10 @@ export interface Bento {
 
 // 本公司員工
 export interface User {
-  userId: string, // 為了跟google id 相同type
+  googleId: string, 
   nogleId?: string, // 看有無需要
   email?: string,
-  nickName?: string,
+  displayName?: string,
   walletAddress?: string, // 錢包地址
   acceptPayMethod?: PayMethod[], // 預設 cash, 當發起者的時候, 可以接受別人用啥付款
   linePayId?: string,
