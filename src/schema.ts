@@ -5,6 +5,7 @@ export interface Company  {
   address: string,
   minOrderNum: number, // 最少免運訂購數量
   orderBefore: string, // 幾點前需要下訂 ex: 10:30PM
+  restDay: string[], // 休息日, 先用字串陣列再看有沒有比較好的表達方式
   active: boolean, // 是不是今天所發起要訂的便當
   menu: Bento[],
   order?: Order, //訂單應該不用紀錄, 隔天下單的就重新塞
